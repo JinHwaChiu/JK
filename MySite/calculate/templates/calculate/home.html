@@ -1,0 +1,45 @@
+<!-- 模板补充知识：网站模板的设计，一般的，我们做网站有一些通用的部分，比如 导航，底部，访问统计代码等等
+nav.html, bottom.html, tongji.html
+extends 'calculate/base.html' 
+block title 欢迎光临首页 endblock 
+ -->
+
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+      <title> Fighting </title>
+</head>
+
+<body>
+      <div>
+      {{string}}
+      </div>
+      <div>
+      {% for i in tutorial %}
+      {{i}}
+      {% endfor %}
+      </div>
+      <div>
+      {% for key,value in info_dic.items %}
+      {{key}}:{{value}}
+      {% endfor %}
+      </div>
+      <div>
+      {% for i in List %}
+      {{i}}
+      {% if not forloop.last %},{% endif %}
+      {% endfor %}
+      </div>
+      <a href = "{% url 'map' %}"> map </a>
+      <div> </div>
+      <a href = "{% url 'add2' 9 5 %}"> plus  </a>
+</body>
+
+</html>
+
+
+
+

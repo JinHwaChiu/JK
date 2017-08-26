@@ -1,0 +1,4 @@
+這個資料夾要另外自己建立
+為了在cmd 
+python manage.py collectstatic時候 不會有問題
+原因待釐清
